@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Page Title</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="_assets/css/jquery.mobile-1.4.5.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="_assets/js/jquery.mobile-1.4.5.js"></script>
+
+	<style>
+
+	/*---------------- Header Styles------------------- */
+
+	.ui-header .ui-title {
+	    margin: 0 3em;
+	    margin-right: 0 6em;
+	    text-align: left;
+	    padding-left: .5em;
+	    color: white;
+	    text-shadow: none;
+	}
+	.ui-header {
+	    background-color: #303b68 !important;
+	}
+	.nostylebtn {
+	    background: transparent !important;
+	    box-shadow: none;
+	    border: none !important;
+	}
+
+
+	/*---------------- Header Style end------------------- */
+
+
+		/*---------------- Crew Connect Icons------------------- */
+
+
+	.cw-mobileicons {
+	    background: url("_assets/img/menu.png") no-repeat transparent !important;
+	}
+	.cw-icons-menu {
+	    background-position: 4px 4px !important;
+	}
+	.cw-icons-tiles {
+	    background-position: -125px 4px !important;
+	}
+	.cw-icons-dotmenu {
+	    background-position: -34px 4px !important;
+	}
+	.cw-icons-bell {
+	    background-position: -95px 4px !important;
+	}
+	.cw-icons-cal {
+	    background-position: -157px 4px !important;
+	}
+	.cw-icons-swap {
+	    background-position: -189px 4px !important;
+	}
+	.cw-icons-alw {
+	    background-position: -220px 4px !important;
+	}
+	.cw-icons-house {
+	    background-position: -253px 4px !important;
+	}
+	
+	.cw-icons-flight {
+	background-position: -349px 3px !important;
+	}
+	
+	.cw-icons-greenchk {
+	background-position: -317px 3px !important;
+	}
+	
+	.cw-icons-greychk {
+	background-position: -285px 3px !important;
+	}
+	
+	.cw-icons-grdtrg {
+	background-position: -381px 3px !important;
+	}
+	
+	.cw-icons-simtrg {
+	background-position:  -413px 3px !important;
+	}
+	
+    .cw-icons-grybox {
+	background-position: -445px 3px !important;
+	}
+	
+	.cw-icons-blkbox {
+	background-position:  -473px 3px !important;
+	}
+	
+	
+	  
+	
+	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	    .ui-icon-mymenu1 {
+	        background: url("menu@2x.png") 4px 4px no-repeat transparent !important;
+	        background-size: 18px 18px;
+	    }
+	}
+
+
+	/*---------------- Crew Connect Icons End------------------- */
+
+
+	/*---------------- Left Menu Styles------------------ */
+
+	.ui-panel-inner {
+	    padding: 0px;
+	    padding-top: 2em;
+	    font-size: 12px;
+	    text-shadow: none;
+	}
+	.panellist {
+	    list-style: none;
+	    
+	    padding-top: 5px;
+	    padding-left: 0px;
+	}
+	.panellist li {
+	        /* height: 40px; */
+    font-size: 16px;
+    border-top: 1px solid #d6d6d6;
+    clear: both;
+    padding-top: 0.5em;
+    padding-bottom: .5em;
+    overflow: hidden;
+    padding-left: 1em;
+	
+	box-shadow: inset 0px 0px 9px -4px white, inset 0px 2px 9px -5px white;
+	}
+	.panellist li .module-name {
+	    float: left;
+	    padding: .6em;
+	}
+	.panellist li .module-icon {
+	    width: 35px;
+	    float: left;
+	    padding-left: 10px
+	}
+	#mypanel {
+	    background-color: #28384f;
+	    color: white;
+	}
+	.profile-holder {
+	    padding-left: .5em;
+	    padding-eight: .5em;
+	}
+	.panel-footer {
+	    background-color: #2f405a;
+	    position: fixed;
+	    bottom: 0px;
+	    padding: .5em;
+	    width: 95%;
+	}
+	.panel-profile-info {
+	    float: left;
+	}
+	.panel-profile-info ul {
+	    float: left;
+	    list-style: none;
+	    padding: 0px;
+	    margin: 0px;
+	    padding-top: .2em;
+	    padding-left: .4em;
+	}
+	.panel-profile-info ul li:first-child {
+	    font-size: 10px;
+	    color: #fef0e3;
+	}
+	.panel-profile-info ul li:first-child {
+	    font-weight: bold;
+	    font-size: 12px;
+	}
+	.panel-profile-btn {
+	    float: right;
+	}
+	.profile-holder {
+	    width: 80%;
+	}
+	.profile-image-box {
+	    float: left;
+	    width: 50px;
+	    height: 50px;
+	    background: url("_assets/img/progfilephoto.jpg") no-repeat transparent !important;
+	    border-radius: 50%;
+	    margin-left: .5em;
+	}
+	.panel-list-box {
+	    height: 400px;
+	}
+	.panel-profile {
+	    overflow: hidden;
+		    overflow: hidden;
+    padding-left: 1em;
+    padding-right: 1em;
+	}
+
+
+		/*---------------- Left Menu Styles End------------------ */
+
+
+		.li-box-container{
+    /* border: 1px solid #b1afaf; */
+    width: 100%;
+    padding-bottom: 0.2em;
+    background-color: #e6ebf3;
+    box-shadow: 1px 1px 6px -1px #333333;
+		}
+
+		.li-line1{
+	    margin-left: .5em;
+    margin-right: .5em;
+    border-bottom: 1px solid #b1afaf;
+    clear: both;
+    overflow: hidden;
+    padding-top: 0.4em;
+    padding-bottom: .4em;
+		}
+		.li-date-day{
+		float: left;
+		font-size: 13px;
+		}
+		.li-time{
+		float: right;
+		font-size: 13px;
+		}
+		.li-line2{
+		margin-left: .5em;
+		margin-right: .5em;
+		overflow: hidden;
+		}
+		.li-rost-icon{
+		height: 30px;
+		width: 30px;
+		
+		float: left;
+		margin-top: 4px;
+		}
+
+		.li-rost-sector{
+			width: 70%;
+	    float: left;
+	    margin-top: 2px;
+	    margin-left: 6px;
+		}
+
+		.rost-sector{
+		text-transform: uppercase;
+		    font-size: 14px;
+		    color: #384ea5;
+		     }
+
+		.rost-flight{
+		font-size: 12px;
+
+		}
+
+		.li-rost-check{
+		height: 20px;
+		width: 20px;
+		
+		float: right;
+		margin-top: 5px;
+
+		}
+
+.roster > li {
+
+	border:none !important;
+}
+.ui-btn-icon-right:after{
+display:none;
+}
+
+
+.dutyswaptabs{
+margin-top: -24px;
+    margin-left: -24px;
+    margin-right: -24px;
+    box-shadow: 0px 1px 2px 2px grey;
+    height: 53px;
+
+}
+
+
+	
+.dutyswaptabs a{	
+	width: 96%;
+    border-radius: 0 !important;
+    background-color: #414a81 !important;
+    border: none;
+	border-bottom:2px solid #414a81 !important;
+   color: rgba(255, 255, 255, 0.7) !important;
+    text-shadow: none !important;
+    box-shadow: none;
+	border-left:1px solid grey;
+	}
+	
+.dutyswaptabs a.ui-btn-active{
+
+width: 96%;
+    border-radius: 0 !important;
+    background-color: #414a81 !important;
+    border: none;
+    color: white !important;
+    text-shadow: none !important;
+    box-shadow: none;
+	border-bottom:2px solid white !important;
+	border-left:1px solid grey;
+
+}
+	
+	.ui-btn:focus{
+	box-shadow: none !important;
+	}
+	
+/*------------------Tyep2 lists----------------*/
+
+.li-box-container-t2{
+    border: 1px solid #b1afaf;
+    width: 100%;
+    padding-bottom: 0.2em;
+	background-color: #e4e4e4;
+}
+.li-line1-t2{
+    margin-left: .5em;
+    margin-right: .5em;
+    border-bottom: 1px solid #b1afaf;
+    clear: both;
+    overflow: hidden;
+}
+.li-t2-data1{
+    float: left;
+    font-size: 13px;
+    width: 50%;
+}
+.li-t2-data2{
+float: left;
+    font-size: 13px;
+    width: 50%;
+}
+
+.li-request-code-icon{
+    height: 20px;
+    width: 20px;
+    float: left;
+}
+.li-request-code-num{
+    float: left;
+    width: 60%;
+    padding-left: 5px;
+}
+.li-request-act{
+float: right;
+}
+
+.li-request-act{
+	height: 20px;
+    width: 20px;
+    float: left;
+}
+
+.li-request-act-num{
+    padding-left: 5px;
+    float: left;
+}
+.li-line2-t2{
+    margin-left: .5em;
+    margin-right: .5em;
+    overflow: hidden;
+    font-size: 13px;
+}
+.li-t2-data3{
+    float: left;
+    margin-top: 4px;
+    width: 50%;
+}
+
+.li-t2-data4{
+    float: right;
+    margin-top: 5px;
+    width: 50%;
+}
+.li-user-icon{
+	height: 20px;
+    width: 20px;
+    float: left;
+}
+.li-userid-name{
+float: left;
+    padding-left: 5px;
+}
+
+
+
+/*------------------End of type2 List -------------------------*/
+
+
+.mobiletabs .ui-navbar .ui-btn{
+
+border-color: #303b68 !important;
+color: #303b68 !important;
+}	
+	
+.mobiletabs .ui-navbar .ui-btn.ui-btn-active{
+
+ background-color: #303b68 !important;
+color:white !important;
+
+}	
+	
+	
+	</style>
+
+
+</head>
+<body>
+
+<div data-role="page" id="page1">
+
+<div data-role="panel" id="mypanel" data-display="overlay">
+
+   <div class="panel-profile" >
+
+   <div class-="profile-holder">
+		<div class="profile-image-box"></div>
+
+		<div class= "panel-profile-info">
+		<ul>
+		<li>John Doe</li>
+		<li>Cabin Director</li>
+		<li>last login: <span>13 Nov 2016 06:30:11</span></li>
+		</ul>
+		</div>
+
+	</div>
+		<div class="panel-profile-btn">
+		<a href="#mypanel"  class="ui-btn ui-corner-all  ui-btn-icon-notext ui-nodisc-icon nostylebtn cw-icons-bell cw-mobileicons">Search</a>
+		</div>
+   </div>
+
+   <div class="panel-list-box">
+   <ul class="panellist">
+			<li>
+			<div class="module-icon"><a href="#mypanel"  class="ui-btn ui-corner-all cw-mobileicons cw-icons-tiles ui-btn-icon-notext ui-nodisc-icon nostylebtn">Search</a></div>
+			<div class="module-name">Dashboard</div>
+			<div class="menu-arrow"></div>
+			</li>
+			<li>
+			<div class="module-icon"><a href="#mypanel"  class="ui-btn ui-corner-all cw-mobileicons cw-icons-cal ui-btn-icon-notext ui-nodisc-icon nostylebtn">Search</a></div>
+			<div class="module-name">My Roster</div>
+			<div class="menu-arrow"></div>
+			</li>
+			<li>
+			<div class="module-icon"><a href="#mypanel"  class="ui-btn ui-corner-all cw-mobileicons cw-icons-swap ui-btn-icon-notext ui-nodisc-icon nostylebtn">Search</a></div>
+			<div class="module-name">Duty Swap</div>
+			<div class="menu-arrow"></div>
+			</li>
+			<li>
+			<div class="module-icon"><a href="#mypanel"  class="ui-btn ui-corner-all cw-mobileicons cw-icons-alw ui-btn-icon-notext ui-nodisc-icon nostylebtn">Search</a></div>
+			<div class="module-name">Allowances</div>
+			<div class="menu-arrow"></div>
+			</li>
+			<li>
+			<div class="module-icon"><a href="#mypanel"  class="ui-btn ui-corner-all cw-mobileicons cw-icons-house ui-btn-icon-notext ui-nodisc-icon nostylebtn">Search</a></div>
+			<div class="module-name">Leaves</div>
+			<div class="menu-arrow"></div>
+			</li>
+   </ul>
+   </div>
+  
+
+ <div class="panel-footer">
+ <a href="#mypanel"  class="ui-btn ui-corner-all ui-icon-mymenu1 ui-btn-icon-notext ui-nodisc-icon nostylebtn">Search</a>
+ <p>Copyright &copy; 2016. All rights reserved</p>
+ <p>Designed and developed by Qatar Airwasy IT.</p>
+ </div>
+
+</div>
+
+
+
+	<div data-role="header">
+	<a href="#mypanel"  class="ui-btn ui-corner-all cw-mobileicons cw-icons-menu ui-btn-icon-notext ui-nodisc-icon nostylebtn" style="text-indent:-9999px; margin-top:3px" >Search</a>
+
+		<h1>Duty Swap</h1>
+
+	<a href="#mypanel"  class="ui-nodisc-icon nostylebtn cw-mobileicons cw-icons-dotmenu ui-btn-right ui-btn-icon-notext ui-btn ui-btn-icon-notext"  style="text-indent:-9999px; margin-top:3px">new</a>
+
+<a href="#page2" class="ui-nodisc-icon nostylebtn cw-mobileicons cw-icons-bell ui-btn-right ui-btn" style="text-indent:-9999px;margin-top:3px;margin-right: 2.5em;" data-role="button" role="button">new</a>
+
+
+  
+
+
+	</div><!-- /header -->
+
+	<div data-role="content">
+	
+	  <div class="ui-grid-b dutyswaptabs" >
+	<div class="ui-block-a"><a href="#page1" data-mini="false" data-inline="false" data-role="button">My Roster</a></div>
+	
+	<div class="ui-block-b"><a href="#page2"  data-role="button">Advertisements</a></div>
+	<div class="ui-block-c"><a href="#page1"  data-role="button">Swap Diary </a></div>
+</div>
+
+	
+	
+		<section style="overflow:hidden; margin-bottom:5px; margin-top: 10px;" >
+		<div style="float:left; font-size:14px; font-weight:bold;  " > <p>December 2016</p> </div>
+		<div style="float:right; text-align:right;">
+		<div data-role="fieldcontain" style=" float:right; margin-top:0px" >
+			<div style="float:right;">
+	<select name="flip-1" id="flip-1" data-role="slider" data-mini="true" style="width:80px" >
+			<option value="off">Off</option>
+			<option value="on">On</option>
+		</select> 
+		</div>
+		<div style="float:right;">
+		<label for="flip-1" style=" font-size:10px; padding-right:5px; padding-top:10px " >Allow Continuous selection</label>
+       </div>
+		
+      </div>
+	  </div>
+
+</section>
+<section>
+<ul data-role="listview" data-theme="d" data-divider-theme="d" class="ui-listview roster">
+
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container">
+									<div class ="li-line1" >
+										 <div class="li-date-day">02 Tue</div>
+										 <div class="li-time">17:00 - 22:00</div>
+									</div>
+									<div class ="li-line2" >
+										 <div class="li-rost-icon cw-mobileicons cw-icons-flight"></div>
+										 <div class="li-rost-sector">
+												<div class="rost-sector" >DOH-DXB-MUS-DOH</div>
+												<div class="rost-flight" >1145</div>
+										 </div>
+										 <div class="li-rost-check cw-mobileicons cw-icons-greychk"></div>
+									</div>
+							 </div>
+							</li>
+
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container">
+									<div class ="li-line1" >
+										 <div class="li-date-day">02 Tue</div>
+										 <div class="li-time">17:00 - 22:00</div>
+									</div>
+									<div class ="li-line2" >
+										 <div class="li-rost-icon cw-mobileicons cw-icons-simtrg"></div>
+										 <div class="li-rost-sector">
+												<div class="rost-sector" >DOH-DXB-MUS-DOH</div>
+												<div class="rost-flight" >1145</div>
+										 </div>
+										 <div class="li-rost-check cw-mobileicons cw-icons-greenchk"></div>
+									</div>
+							 </div>
+							</li>
+
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container">
+									<div class ="li-line1" >
+										 <div class="li-date-day">02 Tue</div>
+										 <div class="li-time">17:00 - 22:00</div>
+									</div>
+									<div class ="li-line2" >
+										 <div class="li-rost-icon cw-mobileicons cw-icons-grdtrg"></div>
+										 <div class="li-rost-sector">
+												<div class="rost-sector" >DOH-DXB-MUS-DOH</div>
+												<div class="rost-flight" >1145</div>
+										 </div>
+										 <div class="li-rost-check cw-mobileicons cw-icons-greenchk"></div>
+									</div>
+							 </div>
+							</li>
+
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container ">
+									<div class ="li-line1" >
+										 <div class="li-date-day">02 Tue</div>
+										 <div class="li-time">17:00 - 22:00</div>
+									</div>
+									<div class ="li-line2" >
+										 <div class="li-rost-icon cw-mobileicons cw-icons-flight"></div>
+										 <div class="li-rost-sector">
+												<div class="rost-sector" >DOH-DXB-MUS-DOH</div>
+												<div class="rost-flight" >1145</div>
+										 </div>
+										 <div class="li-rost-check cw-mobileicons cw-icons-greychk"></div>
+									</div>
+							 </div>
+							</li>
+
+
+														<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+														 <div class="li-box-container">
+																<div class ="li-line1" >
+																	 <div class="li-date-day">02 Tue</div>
+																	 <div class="li-time">17:00 - 22:00</div>
+																</div>
+																<div class ="li-line2" >
+																	 <div class="li-rost-icon cw-mobileicons cw-icons-grdtrg"></div>
+																	 <div class="li-rost-sector">
+																			<div class="rost-sector" >DOH-DXB-MUS-DOH</div>
+																			<div class="rost-flight" >1145</div>
+																	 </div>
+																	 <div class="li-rost-check cw-mobileicons cw-icons-greychk"></div>
+																</div>
+														 </div>
+														</li>
+
+														<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+														 <div class="li-box-container">
+																<div class ="li-line1" >
+																	 <div class="li-date-day">02 Tue</div>
+																	 <div class="li-time">17:00 - 22:00</div>
+																</div>
+																<div class ="li-line2" >
+																	 <div class="li-rost-icon cw-mobileicons cw-icons-flight"></div>
+																	 <div class="li-rost-sector">
+																			<div class="rost-sector" >DOH-DXB-MUS-DOH</div>
+																			<div class="rost-flight" >1145</div>
+																	 </div>
+																	 <div class="li-rost-check cw-mobileicons cw-icons-greychk"></div>
+																</div>
+														 </div>
+														</li>
+
+														<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+														 <div class="li-box-container">
+																<div class ="li-line1" >
+																	 <div class="li-date-day">02 Tue</div>
+																	 <div class="li-time">17:00 - 22:00</div>
+																</div>
+																<div class ="li-line2" >
+																	 <div class="li-rost-icon cw-mobileicons cw-icons-grdtrg"></div>
+																	 <div class="li-rost-sector">
+																			<div class="rost-sector" >DOH-DXB-MUS-DOH</div>
+																			<div class="rost-flight" >1145</div>
+																	 </div>
+																	 <div class="li-rost-check cw-mobileicons cw-icons-greychk"></div>
+																</div>
+														 </div>
+														</li>
+
+												       
+
+
+
+
+</ul>
+
+</section>
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="page2">
+
+
+<div data-role="header">
+	<a href="#page1"  class="ui-btn ui-corner-all cw-mobileicons cw-icons-menu ui-btn-icon-notext ui-nodisc-icon nostylebtn" style="text-indent:-9999px; margin-top:3px" >Search</a>
+
+		<h1>Advertisements</h1>
+
+	<a href="#page1"  class="ui-nodisc-icon nostylebtn cw-mobileicons cw-icons-dotmenu ui-btn-right ui-btn-icon-notext ui-btn ui-btn-icon-notext"  style="text-indent:-9999px; margin-top:3px">new</a>
+
+<a href="#mypanel" class="ui-nodisc-icon nostylebtn cw-mobileicons cw-icons-bell ui-btn-right ui-btn" style="text-indent:-9999px;margin-top:3px;margin-right: 2.5em;" data-role="button" role="button">new</a>
+
+
+	</div><!-- /header -->
+
+	<div data-role="content">
+	
+	
+<div data-role="tabs" id="tabs" class="mobiletabs">
+    <div data-role="navbar" style="margin-top: -30px;">
+    <ul>
+      <li class="ui-tabs-active ui-state-active "><a class="ui-btn-active" href="#one">Advertisements </a></li>
+      <li><a href="#two">Openpairings</a></li>
+      <li><a href="#">Watchlist</a></li>
+    </ul>
+  </div>
+ 
+  
+  
+    <div id="one" class="ui-content" style="padding: 0px; padding-right: 5px;">
+    <h1>First tab contents</h1>
+<ul data-role="listview" data-theme="d" data-divider-theme="d" class="ui-listview roster">
+
+		<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container-t2">
+									<div class ="li-line1-t2" >
+										 <div class="li-t2-data1"><strong>11 Nov</strong> 03:10</div>
+										 <div class="li-t2-data2">
+										 <div class="li-request-code-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-request-code-num">1506221617880</div>
+										 <div class="li-request-code-act"><div class="li-request-act cw-mobileicons cw-icons-greenchk"></div><div class="" style="
+   
+">3</div></div>
+										 </div>
+									</div>
+									<div class ="li-line2-t2" >
+										 
+										 <div class="li-t2-data3">
+												<div class="li-rost-flt-sec" >QR 401(DOH-DXB-MUS-DOH)</div>
+												
+										 </div> 
+										 <div class="li-t2-data4">
+										 
+										 <div class="li-user-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-userid-name">48750 (Helen)</div>
+										 
+										 </div>
+									</div>
+							 </div>
+							</li>
+	
+	
+		<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container-t2">
+									<div class ="li-line1-t2" >
+										 <div class="li-t2-data1"><strong>11 Nov</strong> 03:10</div>
+										 <div class="li-t2-data2">
+										 <div class="li-request-code-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-request-code-num">1506221617880</div>
+										 <div class="li-request-code-act"><div class="li-request-act cw-mobileicons cw-icons-greenchk"></div><div class="" style="
+   
+">3</div></div>
+										 </div>
+									</div>
+									<div class ="li-line2-t2" >
+										 
+										 <div class="li-t2-data3">
+												<div class="li-rost-flt-sec" >QR 401(DOH-DXB-MUS-DOH)</div>
+												
+										 </div> 
+										 <div class="li-t2-data4">
+										 
+										 <div class="li-user-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-userid-name">48750 (Helen)</div>
+										 
+										 </div>
+									</div>
+							 </div>
+							</li>
+	
+	
+	
+		<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container-t2">
+									<div class ="li-line1-t2" >
+										 <div class="li-t2-data1"><strong>11 Nov</strong> 03:10</div>
+										 <div class="li-t2-data2">
+										 <div class="li-request-code-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-request-code-num">1506221617880</div>
+										 <div class="li-request-code-act"><div class="li-request-act cw-mobileicons cw-icons-greenchk"></div><div class="" style="
+   
+">3</div></div>
+										 </div>
+									</div>
+									<div class ="li-line2-t2" >
+										 
+										 <div class="li-t2-data3">
+												<div class="li-rost-flt-sec" >QR 401(DOH-DXB-MUS-DOH)</div>
+												
+										 </div> 
+										 <div class="li-t2-data4">
+										 
+										 <div class="li-user-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-userid-name">48750 (Helen)</div>
+										 
+										 </div>
+									</div>
+							 </div>
+							</li>
+	
+	
+	
+		<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container-t2">
+									<div class ="li-line1-t2" >
+										 <div class="li-t2-data1"><strong>11 Nov</strong> 03:10</div>
+										 <div class="li-t2-data2">
+										 <div class="li-request-code-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-request-code-num">1506221617880</div>
+										 <div class="li-request-code-act"><div class="li-request-act cw-mobileicons cw-icons-greenchk"></div><div class="" style="
+   
+">3</div></div>
+										 </div>
+									</div>
+									<div class ="li-line2-t2" >
+										 
+										 <div class="li-t2-data3">
+												<div class="li-rost-flt-sec" >QR 401(DOH-DXB-MUS-DOH)</div>
+												
+										 </div> 
+										 <div class="li-t2-data4">
+										 
+										 <div class="li-user-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-userid-name">48750 (Helen)</div>
+										 
+										 </div>
+									</div>
+							 </div>
+							</li>
+	
+	
+		<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container-t2">
+									<div class ="li-line1-t2" >
+										 <div class="li-t2-data1"><strong>11 Nov</strong> 03:10</div>
+										 <div class="li-t2-data2">
+										 <div class="li-request-code-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-request-code-num">1506221617880</div>
+										 <div class="li-request-code-act"><div class="li-request-act cw-mobileicons cw-icons-greenchk"></div><div class="" style="
+   
+">3</div></div>
+										 </div>
+									</div>
+									<div class ="li-line2-t2" >
+										 
+										 <div class="li-t2-data3">
+												<div class="li-rost-flt-sec" >QR 401(DOH-DXB-MUS-DOH)</div>
+												
+										 </div> 
+										 <div class="li-t2-data4">
+										 
+										 <div class="li-user-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-userid-name">48750 (Helen)</div>
+										 
+										 </div>
+									</div>
+							 </div>
+							</li>
+	
+	
+		<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container-t2">
+									<div class ="li-line1-t2" >
+										 <div class="li-t2-data1"><strong>11 Nov</strong> 03:10</div>
+										 <div class="li-t2-data2">
+										 <div class="li-request-code-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-request-code-num">1506221617880</div>
+										 <div class="li-request-code-act"><div class="li-request-act cw-mobileicons cw-icons-greenchk"></div><div class="" style="
+   
+">3</div></div>
+										 </div>
+									</div>
+									<div class ="li-line2-t2" >
+										 
+										 <div class="li-t2-data3">
+												<div class="li-rost-flt-sec" >QR 401(DOH-DXB-MUS-DOH)</div>
+												
+										 </div> 
+										 <div class="li-t2-data4">
+										 
+										 <div class="li-user-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-userid-name">48750 (Helen)</div>
+										 
+										 </div>
+									</div>
+							 </div>
+							</li>
+	
+	
+		<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container-t2">
+									<div class ="li-line1-t2" >
+										 <div class="li-t2-data1"><strong>11 Nov</strong> 03:10</div>
+										 <div class="li-t2-data2">
+										 <div class="li-request-code-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-request-code-num">1506221617880</div>
+										 <div class="li-request-code-act"><div class="li-request-act cw-mobileicons cw-icons-greenchk"></div><div class="" style="
+   
+">3</div></div>
+										 </div>
+									</div>
+									<div class ="li-line2-t2" >
+										 
+										 <div class="li-t2-data3">
+												<div class="li-rost-flt-sec" >QR 401(DOH-DXB-MUS-DOH)</div>
+												
+										 </div> 
+										 <div class="li-t2-data4">
+										 
+										 <div class="li-user-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-userid-name">48750 (Helen)</div>
+										 
+										 </div>
+									</div>
+							 </div>
+							</li>
+	
+	
+		<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container-t2">
+									<div class ="li-line1-t2" >
+										 <div class="li-t2-data1"><strong>11 Nov</strong> 03:10</div>
+										 <div class="li-t2-data2">
+										 <div class="li-request-code-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-request-code-num">1506221617880</div>
+										 <div class="li-request-code-act"><div class="li-request-act cw-mobileicons cw-icons-greenchk"></div><div class="" style="
+   
+">3</div></div>
+										 </div>
+									</div>
+									<div class ="li-line2-t2" >
+										 
+										 <div class="li-t2-data3">
+												<div class="li-rost-flt-sec" >QR 401(DOH-DXB-MUS-DOH)</div>
+												
+										 </div> 
+										 <div class="li-t2-data4">
+										 
+										 <div class="li-user-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-userid-name">48750 (Helen)</div>
+										 
+										 </div>
+									</div>
+							 </div>
+							</li>
+	
+	
+		<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container-t2">
+									<div class ="li-line1-t2" >
+										 <div class="li-t2-data1"><strong>11 Nov</strong> 03:10</div>
+										 <div class="li-t2-data2">
+										 <div class="li-request-code-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-request-code-num">1506221617880</div>
+										 <div class="li-request-code-act"><div class="li-request-act cw-mobileicons cw-icons-greenchk"></div><div class="" style="
+   
+">3</div></div>
+										 </div>
+									</div>
+									<div class ="li-line2-t2" >
+										 
+										 <div class="li-t2-data3">
+												<div class="li-rost-flt-sec" >QR 401(DOH-DXB-MUS-DOH)</div>
+												
+										 </div> 
+										 <div class="li-t2-data4">
+										 
+										 <div class="li-user-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-userid-name">48750 (Helen)</div>
+										 
+										 </div>
+									</div>
+							 </div>
+							</li>
+	
+	
+		<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container-t2">
+									<div class ="li-line1-t2" >
+										 <div class="li-t2-data1"><strong>11 Nov</strong> 03:10</div>
+										 <div class="li-t2-data2">
+										 <div class="li-request-code-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-request-code-num">1506221617880</div>
+										 <div class="li-request-code-act"><div class="li-request-act cw-mobileicons cw-icons-greenchk"></div><div class="" style="
+   
+">3</div></div>
+										 </div>
+									</div>
+									<div class ="li-line2-t2" >
+										 
+										 <div class="li-t2-data3">
+												<div class="li-rost-flt-sec" >QR 401(DOH-DXB-MUS-DOH)</div>
+												
+										 </div> 
+										 <div class="li-t2-data4">
+										 
+										 <div class="li-user-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-userid-name">48750 (Helen)</div>
+										 
+										 </div>
+									</div>
+							 </div>
+							</li>
+	
+	
+		<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+							 <div class="li-box-container-t2">
+									<div class ="li-line1-t2" >
+										 <div class="li-t2-data1"><strong>11 Nov</strong> 03:10</div>
+										 <div class="li-t2-data2">
+										 <div class="li-request-code-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-request-code-num">1506221617880</div>
+										 <div class="li-request-code-act"><div class="li-request-act cw-mobileicons cw-icons-greenchk"></div><div class="" style="
+   
+">3</div></div>
+										 </div>
+									</div>
+									<div class ="li-line2-t2" >
+										 
+										 <div class="li-t2-data3">
+												<div class="li-rost-flt-sec" >QR 401(DOH-DXB-MUS-DOH)</div>
+												
+										 </div> 
+										 <div class="li-t2-data4">
+										 
+										 <div class="li-user-icon cw-mobileicons cw-icons-greenchk"></div>
+										 <div class="li-userid-name">48750 (Helen)</div>
+										 
+										 </div>
+									</div>
+							 </div>
+							</li>
+	
+							</ul>
+    </div>
+    <div id="two" class="ui-content">
+       <h1>Second tab contents</h1>
+    </div>
+ </div>
+
+	
+</div>
+<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+	
+	</div>
+
+	</body>
+</html>
